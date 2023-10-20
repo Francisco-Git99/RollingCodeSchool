@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap');
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: blueviolet;
+}
+.title{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-text {
+    padding: 10px;
+}  
+.members{
+    text-align: right;
+    color: #FCAC44;
+    font-size: 1rem;
+}
+.card-music{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 290px;
+    justify-content: center;
+    text-align: center;
+}
+.bandasrelacionadas{
+    text-align: center;
+    background-color: #FCAC44;
+}
+.Card2:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+    border: solid violet;
+}
+.music-1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    align-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #FCAC44;
+}
+.title2{
+    font-size: 3rem;
+    margin-top: 10px;
+}

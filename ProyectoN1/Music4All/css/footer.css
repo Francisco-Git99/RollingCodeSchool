@@ -1,0 +1,13 @@
+
+.footer{
+    overflow: hidden;
+    background-color:#744494;
+    margin-top: 10vw;
+    margin-bottom: 0vw;
+}
+@media screen and (max-width:850px ){
+    body{
+        background-color: red;
+    }
+}
+

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section1 {
+    background-color: #d38312;
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    width: 50vw;
+    font-family: 'Courgette', cursive;
+    border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px ;
+}
+
+.recommendations {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recom1 {
+    background: linear-gradient(to bottom, #d38312, #a83279) !important;
+    color: white;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recom1:hover {
+    box-shadow: 10px 10px 0px 0px #ddd2e436 !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.boton1 {
+    background-color: #FF9922 !important;
+    color: black !important;
+    border: transparent !important;
+    margin-top: 10px;
+}
+
+.boton2 {
+    background-color: #FF9922 !important;
+    color: black !important;
+    border: transparent !important;
+    margin-top: 10px;
+}
+
+.boton3 {
+    background-color: #FF9922 !important;
+    color: black !important;
+    border: transparent !important;
+    margin-top: 10px;
+}
+
+.recom2 {
+    background: linear-gradient(to bottom, #d38312, #a83279) !important;
+    color: white;
+    margin-top: 2rem;
+}
+
+.recom2:hover {
+    box-shadow: 10px 10px 0px 0px #ddd2e436 !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.recom3 {
+    background: linear-gradient(to bottom, #d38312, #a83279) !important;
+    color: white;
+    margin-top: 2rem;
+}
+
+.recom3:hover {
+    box-shadow: 10px 10px 0px 0px #ddd2e436 !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.section2 {
+    background-color: #d38312;
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    width: 50vw;
+    font-family: 'Courgette', cursive;
+    border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px ;
+
+}
+
+.mostListened {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner{
+    background-image: url(https://images.sharefaith.com/images/3/1302822682131_1366/img_mouseover3.jpg);
+    background-color: transparent !important;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px !important;
+}
+
+.suscripcion{
+    color: white !important;
+    font-size: 40px !important;
+    opacity: 1 !important;
+}
+
+.section4 {
+    background-color: #d38312;
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    width: 50vw;
+    font-family: 'Courgette', cursive;
+    border-top-right-radius: 40px ;
+    border-bottom-right-radius: 40px ;
+}
+
+.sec-generos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.generos {
+    width: 190px;
+    height: 190px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #754495, #f5af19);
+    padding-top: 7rem;
+    margin: 10px !important;
+}
+
+.generos:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transform: s  le(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.generoh{
+    font-size: 50px;
+    padding-left: 2.7rem;
+    background-color: #754495d2;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    height: 4rem;
+    width: 11.6rem;
+    margin-left: 2px;
+}
+
+.fondo1{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/557/775/small_2x/vintage-seamless-background-with-rock-music-ornament-free-vector.jpg);
+}
+
+.genero2{
+    font-size: 50px;
+    padding-left: 3.2rem
+}
+
+.fondo2{
+    background-image: url(https://www.instrumento-musical.com/wp-content/uploads/2021/02/re-nota.jpg);
+}
+
+.genero3{
+    font-size: 50px;
+    padding-left: 3rem
+}
+
+.fondo3{
+    background-image: url(https://img.myloview.es/cuadros/jazz-trompetista-400-30607574.jpg);
+}
+
+.genero4{
+    font-size: 50px;
+    padding-left: 2.7rem
+}
+
+.fondo4{
+    background-image: url(https://algarabia.com/wp-content/uploads/elementor/thumbs/Sin-titulo2-pyi3acm42a2iu054xl7q85dixf6e5tubj69dq2dhgg.jpg );
+    background-position: center;
+}
+
+.genero5{
+    font-size: 50px;
+    padding-left: 1.6rem
+}
+
+.fondo5{
+    background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/de/6d/37/de6d3703-4822-1566-4277-beb7f44dc93c/196626700179.jpg/400x400bb.jpg);
+    background-position: center;
+}
+
+
+.btn-subscribe{
+    background-color: #FF9922 !important;
+    color: black !important;
+    margin-top: 1.5rem;
+    font-size: 40px !important;
+}
+
+.btn-subscribe:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+@media (max-width: 1570px) {
+    .mostListened{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recom1{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,127 @@
+.navbar {
+background-color:  #744494 !important;
+position: sticky !important;
+z-index: 100;
+top: 0;
+width: 100%;
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link {
+    color: #fcac44 !important ;
+}
+.boton-cel{
+    display: flex !important;
+    
+}
+.nav-search{
+    border-top-left-radius: 20px !important ;
+    border-bottom-left-radius: 20px !important ;
+    border-top-right-radius: 0px !important ;
+    border-bottom-right-radius: 0px !important ;
+    border: #fcac44 solid 1px !important;
+    background-color: #ffe7c9 !important;
+}
+
+.btn-icon-nav{
+    border-top-right-radius: 20px !important ;
+    border-bottom-right-radius: 20px !important ;
+    border-top-left-radius: 0px !important ;
+    border-bottom-left-radius: 0px !important ;
+    border: #fcac44 solid 1px !important;
+    background-color: #ffc981 !important;
+    color: #520089 !important;
+}
+.btn-icon-nav:hover{
+    background-color: #fcac44 !important;
+}
+.nav-link:hover{
+    color: #ffffff !important;
+}
+
+
+@media (min-width: 992px) { 
+    .contenedor-nav{
+        width: 46%;
+    }
+    .input-search{
+        width: 100%;
+    }
+    .collapse{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center !important;
+    }
+ }
+
+ @media (max-width: 991px) { 
+    .contenedor-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .input-search{
+        width: 75%;
+    }
+    .navbar-nav{
+        margin-top: 10px;
+    }
+    .boton-cel{
+        display: none !important;
+    }
+  }
+
+
+  /* Botones del login */
+
+.btn-login{
+    background-color: #fcac44 !important;
+    color: rgb(0, 0, 0) !important;
+}
+.btn-login:hover{
+    background-color: #ffca86 !important;
+    transition: 0.3s;
+}
+
+
+/* Inputs del form/login */
+.modal-body input{
+    border: 0px;
+    border-bottom: 0.1px solid #7c24b6;
+    margin: 10px 0px;
+    outline: none;
+    background-color: #292929;
+    color: white;
+    font-size: 14px;
+}
+.modal-input{
+    background-color: #292929 !important;
+}
+.modal-body label{
+    color: #ffffff;
+}
+.modal-body input:hover{
+    border-bottom: 0.1px solid #ac85c4;
+    transition: 0.5s;
+}
+
+/* Btn del form/login */
+.svg{
+    fill: #ffffff;
+}
+.btn-cuentas{
+    border-radius: 20px;
+    border: #7c24b6 solid 0.1px;
+    background-color: #000000 !important;
+}
+.btn-cuentas:hover{
+    background-color: rgb(82, 81, 81) !important;
+}
+.btn-a, .btn-b{
+    text-decoration: none;
+}
+.btn-b:hover{
+    color: #7c24b6 !important;
+}

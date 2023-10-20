@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="shortcut icon" href="../Img/logo-footer.png" type="">
+    <title>Pop</title>
+    <style>
+        .card {
+            background: #754495;
+            border: 1px solid orange;
+        }
+
+        .card:hover {
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            z-index: 2;
+        }
+
+        .card-body {
+            height: 175px;
+        }
+
+        .page-link {
+            border: 1px solid orange;
+            background: #754495;
+        }
+
+        .page-link:hover {
+            border: 1px solid orange;
+            background: #754495;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+
+   <!-------------- NavBar -------------------->
+   <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center">
+
+        <div class="contenedor-nav d-flex justify-content-between align-items-center">
+
+            <div class="img-logo d-flex align-items-center justify-content-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Img/logo.nav1.png" alt="logo" width="50px">
+                </a>
+            </div>
+
+            <div class="input-search ms-md-2">
+                <form class="d-flex">
+                    <input class="nav-search form-control" type="search" placeholder="Buscar música"
+                        aria-label="Search">
+                    <button class="btn-icon-nav btn d-flex align-items-center" type="submit"><i
+                            class="fa-sharp fa-solid fa-magnifying-glass "></i></button>
+                </form>
+            </div>
+
+            <div class="boton-cel d-flex justify-content-end ms-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+
+                <div class="nav-r d-flex d-md-flex align-items-md-center d-sm-flex gap-4 justify-content-between">
+
+                    <div class="d-flex gap-2 flex-column flex-md-row flex-sm-row justify-content-md-center ">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="./suscripcion.html">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Descargar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Windows</a></li>
+                                <li><a class="dropdown-item" href="#">IOS</a></li>
+                                <li><a class="dropdown-item" href="#">Android</a></li>
+                            </ul>
+                        </li>
+
+                    </div>
+
+                    <div class="d-flex gap-2 flex-column flex-md-row flex-sm-row">
+                        <li><button type="button" class="btn btn-outline-warning container-fluid btn-login"
+                                data-bs-toggle="modal" data-bs-target="#exampleModaldos">Regístrate</button></li>
+
+                        <li><button type="button" class="btn btn-outline-warning mb-2 btn-login"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Inicia Sesion
+                            </button>
+                        </li>
+                        </li>
+                        
+                    </div>
+            </ul>
+        </div>
+        
+
+        
+    </div>
+</div>
+</nav>
+<!--------- Modal Register ----------->
+<div class="modal fade modal-login" id="exampleModaldos" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form class="modal-content border-2  border-warning modal-input" autocomplete="off">
+            <div class="modal-header border-2  border-warning bg-black">
+                <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Regístrate
+                </h1>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column my-4">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="" id="apellido" required>
+                <label for="correo">correo electronico</label>
+                <input type="email" id="correo" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+                <label for="name-usuario">Nombre de Usuario</label>
+                <input type="text" id="name-usuario" required>
+            </div>
+            <div
+                class="sesions d-flex flex-column w-100 justify-content-center align-items-center text-white">
+                <p class="text-decoration-underline">Inicia Sesion con </p>
+                <div
+                    class="cuentas-login d-flex flex-column justify-content-center align-items-center gap-1">
+
+                    <a class="btn-a" href=""> <button type="button"
+                            class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-black text-white gap-2 btn-cuentas"><svg
+                                class="svg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 50 50" width="30px" height="30px">
+                                <path
+                                    d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z" />
+                            </svg>
+                            </svg>Inicia Sesion con Facebook</button></a>
+
+
+                    <a class="btn-a" href=""><button type="button"
+                            class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-black text-white gap-2 btn-cuentas">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 50 50" width="30px" height="30px">
+                                <path
+                                    d="M 26 2 C 13.308594 2 3 12.308594 3 25 C 3 37.691406 13.308594 48 26 48 C 35.917969 48 41.972656 43.4375 45.125 37.78125 C 48.277344 32.125 48.675781 25.480469 47.71875 20.9375 L 47.53125 20.15625 L 46.75 20.15625 L 26 20.125 L 25 20.125 L 25 30.53125 L 36.4375 30.53125 C 34.710938 34.53125 31.195313 37.28125 26 37.28125 C 19.210938 37.28125 13.71875 31.789063 13.71875 25 C 13.71875 18.210938 19.210938 12.71875 26 12.71875 C 29.050781 12.71875 31.820313 13.847656 33.96875 15.6875 L 34.6875 16.28125 L 41.53125 9.4375 L 42.25 8.6875 L 41.5 8 C 37.414063 4.277344 31.960938 2 26 2 Z M 26 4 C 31.074219 4 35.652344 5.855469 39.28125 8.84375 L 34.46875 13.65625 C 32.089844 11.878906 29.199219 10.71875 26 10.71875 C 18.128906 10.71875 11.71875 17.128906 11.71875 25 C 11.71875 32.871094 18.128906 39.28125 26 39.28125 C 32.550781 39.28125 37.261719 35.265625 38.9375 29.8125 L 39.34375 28.53125 L 27 28.53125 L 27 22.125 L 45.84375 22.15625 C 46.507813 26.191406 46.066406 31.984375 43.375 36.8125 C 40.515625 41.9375 35.320313 46 26 46 C 14.386719 46 5 36.609375 5 25 C 5 13.390625 14.386719 4 26 4 Z" />
+                            </svg>Inicia Sesion con Google</button></a>
+                    <a class="btn-b text-white text-decoration-underline mt-2" href="">
+                        <p>Ya tengo cuenta</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer border-2  border-warning bg-black mt-2">
+                <button type="button" class="btn btn-login"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <a href="html/error404.html"><input type="submit" class="btn btn-login"
+                        value="Enviar"></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!---------- Register End --------->
+
+
+
+<!--------- Modal Login -------->
+<div class="modal fade modal-login" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form class="modal-content border-2  border-warning modal-input" autocomplete="off">
+            <div class="modal-header border-2  border-warning bg-black">
+                <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Inicia Sesion
+                </h1>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body  d-flex flex-column my-4">
+                <label for="correo">Usuario o e-mail</label>
+                <input type="name email" id="correo" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+                <div class="chexbox-login d-flex justify-content-start gap-5">
+                </div>
+            </div>
+            <div
+                class="sesions d-flex flex-column w-100 justify-content-center align-items-center text-white">
+                <p class="text-decoration-underline">Inicia Sesion con: </p>
+                <div class="cuentas-login d-flex flex-column align-items-center gap-2">
+
+                    <a class="btn-a" href=""> <button type="button"
+                            class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-black text-white gap-2 btn-cuentas"><svg
+                                class="svg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 50 50" width="30px" height="30px">
+                                <path
+                                    d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z" />
+                            </svg>
+                            </svg>Inicia Sesion con Facebook</button></a>
+
+
+                    <a class="btn-a" href=""><button type="button"
+                            class="d-flex justify-content-center align-items-center p-2 rounded-pill bg-black text-white gap-2 btn-cuentas">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 50 50" width="30px" height="30px">
+                                <path
+                                    d="M 26 2 C 13.308594 2 3 12.308594 3 25 C 3 37.691406 13.308594 48 26 48 C 35.917969 48 41.972656 43.4375 45.125 37.78125 C 48.277344 32.125 48.675781 25.480469 47.71875 20.9375 L 47.53125 20.15625 L 46.75 20.15625 L 26 20.125 L 25 20.125 L 25 30.53125 L 36.4375 30.53125 C 34.710938 34.53125 31.195313 37.28125 26 37.28125 C 19.210938 37.28125 13.71875 31.789063 13.71875 25 C 13.71875 18.210938 19.210938 12.71875 26 12.71875 C 29.050781 12.71875 31.820313 13.847656 33.96875 15.6875 L 34.6875 16.28125 L 41.53125 9.4375 L 42.25 8.6875 L 41.5 8 C 37.414063 4.277344 31.960938 2 26 2 Z M 26 4 C 31.074219 4 35.652344 5.855469 39.28125 8.84375 L 34.46875 13.65625 C 32.089844 11.878906 29.199219 10.71875 26 10.71875 C 18.128906 10.71875 11.71875 17.128906 11.71875 25 C 11.71875 32.871094 18.128906 39.28125 26 39.28125 C 32.550781 39.28125 37.261719 35.265625 38.9375 29.8125 L 39.34375 28.53125 L 27 28.53125 L 27 22.125 L 45.84375 22.15625 C 46.507813 26.191406 46.066406 31.984375 43.375 36.8125 C 40.515625 41.9375 35.320313 46 26 46 C 14.386719 46 5 36.609375 5 25 C 5 13.390625 14.386719 4 26 4 Z" />
+                            </svg>Inicia Sesion con Google</button></a>
+                    <a class="btn-b text-white text-decoration-underline my-2" href="">
+                        <p>¿has olvidado tu contraseña?</p>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="modal-footer border-2  border-warning bg-black mt-2">
+                <button type="button" class="btn btn-login" id="" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-login" type="submit"><a class="text-black text-decoration-none" href="./error404.html">Enviar</a></button>
+                <!---- <a href="./html/error404.html"><input type="submit" value="Enviar"></a> --->
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--------- Login End --------->
+
+
+
+    <!-- pag pop -->
+    <h1 class="text-white text-center mt-5 text-decoration-underline">ARTISTAS DE POP</h1>
+
+    <div class="container text-center mt-5">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <a href="./detalleArt.html" style="text-decoration: none;">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/270x205/a8caad5ddaf6bbda19a9b1c7a29b1e6d.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Ariana Grande</h5>
+                            <p class="card-text text-white">Ariana Grande Butera (Boca Ratón, 26 de junio de 1993) es una
+                                actriz, cantante y compositora estadounidense.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <a href="./detalleArt.html" style="text-decoration: none;">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/270x205/e8b17a982b16d2a5ec9cb5626752f2af.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body overflow-y-scroll">
+                            <h5 class="card-title text-white">Lady Gaga</h5>
+                            <p class="card-text text-white">Stefani Joanne Angelina Germanotta, más conocida por su nombre
+                                artístico, Lady Gaga es una cantante, compositora, productora musical, bailarina y pianista
+                                estadounidense.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/9c478396f33206d3261c46c354d70d8f.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Billie Eilish</h5>
+                        <p class="card-text text-white">Billie Eilish Pirate Baird O'Connell​ (Los Ángeles, California;
+                            18 de diciembre de 2001​) conocida solo como Billie Eilish, es una cantante y compositora
+                            estadounidense. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/ee2bd02e9ee02e7a3a2befc6af1da29b.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Rihanna</h5>
+                        <p class="card-text text-white">Rihanna es el nombre artístico de Robyn Rihanna Fenty, una
+                            cantante barbadense. Su música tiene influencias de estilos como el reggae, R&B, dancehall y
+                            pop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/fe2d5fee8956397a3eee0a7df7ae2a70.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Justin Bieber</h5>
+                        <p class="card-text text-white">Justin Drew Bieber Mallette (nacido el 1 de marzo de 1994 en
+                            Ontario, Canadá) es un cantante R&B y pop. También toca la trompeta, la guitarra, el piano y
+                            la batería. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/24e7169d61415bf7e3d8bd0123e30137.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body overflow-y-scroll">
+                        <h5 class="card-title text-white">Michael Jackson</h5>
+                        <p class="card-text text-white">Michael Joseph Jackson, conocido artísticamente en el mundo
+                            entero como Michael Jackson, fue un cantante, compositor y bailarín estadounidense de música
+                            pop, en una amplia acepción que incluye subgéneros como el rhythm & blues (soul y funk),
+                            disco y dance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/2b655aabee07e81a80d97cf8f6355d6a.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body overflow-y-scroll">
+                        <h5 class="card-title text-white">Bruno Mars</h5>
+                        <p class="card-text text-white">Peter Gene Hernandez, conocido profesionalmente como Bruno Mars,
+                            es un cantante, compositor, productor musical, multiinstrumentista y bailarín
+                            estadounidense.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/05a7869e986c393c49cf37a1c4a8125f.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Katy Perry</h5>
+                        <p class="card-text text-white">Katheryn Elizabeth Hudson, conocida profesionalmente como Katy
+                            Perry, es una cantante, compositora y jueza de televisión estadounidense. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-4 m-0 m-auto" style="width: 18rem;">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/270x205/38b0472dcb97287789920ab875fc3ccb.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body overflow-y-scroll">
+                        <h5 class="card-title text-white">Madonna</h5>
+                        <p class="card-text text-white">Madonna Louise Veronica Ciccone es una cantante, compositora y
+                            productora estadounidense de música disco, pop, rock, dance y electrónica principalmente.
+                            Conocida como la "Reina del Pop"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example" class="mt-3">
+        <ul class="pagination d-flex justify-content-between">
+            <li class="page-item ms-5"><a class="page-link text-white" href="rock.html">Previous</a></li>
+            <li class="page-item me-5"><a class="page-link text-white" href="rock.html">Next</a></li>
+        </ul>
+    </nav>
+
+    <!-------------------- footer -------------------->
+    <div class="footer" style="margin-top: 2em;">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top mb-0">
+            <div id="logoyfrase" class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <a>&nbsp;&nbsp;&nbsp;&nbsp;<img class="logo" src="../Img/logo.nav1.png" width="100px"
+                            height="100px"></a>
+                </a>
+                <!-- <p class="text-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music4All</p> -->
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3 text-warning">
+                <h5>Comunidades</h5>
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2"><a href="./rock.html" class="nav-link p-0 text-warning">Artistas</a></li>
+                    <li class="nav-item mb-2"><a href="./error404.html" class="nav-link p-0 text-warning">Desarrolladores</a></li>
+                    <li class="nav-item mb-2"><a href="./error404.html" class="nav-link p-0 text-warning">Podcasts</a></li>
+                    <li class="nav-item mb-2"><a href="./error404.html" class="nav-link p-0 text-warning">Albumes</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 text-warning">
+                <h5>Enlaces utiles</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://www.instagram.com"
+                            class="nav-link p-0 text-warning"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/><stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/><stop offset=".643" stop-color="#d53e91"/><stop offset=".761" stop-color="#cc39a4"/><stop offset=".841" stop-color="#c837ab"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"/><stop offset=".999" stop-color="#4168c9" stop-opacity="0"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"/><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"/><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"/></svg></a></li>
+                    <li class="nav-item mb-2"><a href="https://twitter.com"
+                            class="nav-link p-0 text-warning"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg></a></li>
+                    <li class="nav-item mb-2"><a href="https://www.facebook.com"
+                            class="nav-link p-0 text-warning"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="awSgIinfw5_FS5MLHI~A9a" x1="6.228" x2="42.077" y1="4.896" y2="43.432" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0d61a9"/><stop offset="1" stop-color="#16528c"/></linearGradient><path fill="url(#awSgIinfw5_FS5MLHI~A9a)" d="M42,40c0,1.105-0.895,2-2,2H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32	c1.105,0,2,0.895,2,2V40z"/><path d="M25,38V27h-4v-6h4v-2.138c0-5.042,2.666-7.818,7.505-7.818c1.995,0,3.077,0.14,3.598,0.208	l0.858,0.111L37,12.224L37,17h-3.635C32.237,17,32,18.378,32,19.535V21h4.723l-0.928,6H32v11H25z" opacity=".05"/><path d="M25.5,37.5v-11h-4v-5h4v-2.638c0-4.788,2.422-7.318,7.005-7.318c1.971,0,3.03,0.138,3.54,0.204	l0.436,0.057l0.02,0.442V16.5h-3.135c-1.623,0-1.865,1.901-1.865,3.035V21.5h4.64l-0.773,5H31.5v11H25.5z" opacity=".07"/><path fill="#fff" d="M33.365,16H36v-3.754c-0.492-0.064-1.531-0.203-3.495-0.203c-4.101,0-6.505,2.08-6.505,6.819V22h-4v4	h4v11h5V26h3.938l0.618-4H31v-2.465C31,17.661,31.612,16,33.365,16z"/></svg></a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 text-warning">
+                <h5>Acerca de</h5>
+                <ul class="nav flex-column ">
+                    <li class="nav-item mb-2"><a href="./acercadenosotros.html" class="nav-link p-0 text-warning">Nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="./error404.html" class="nav-link p-0 text-warning">Aplicacion Movil</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-warning">Ayuda</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
