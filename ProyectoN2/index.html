@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rollig Games es una plataforma donde podés encontrar los mejores videjuegos del mercado">
+    <meta name="author" content="Los gamers">
+        <!--Metadatos para los estilos bootstrap y CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <!--Metadatos para el icono-->
+     <link
+     rel="shortcut icon"
+     href="./assets/imagenes/favicon.png"
+     type="image/x-icon"
+   />
+    <title>Rolling Games</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body style="font-family: 'Montserrat', sans-serif; line-height: 17px;">
+  <header class="sticky-top">
+<!--Navbar-->
+  <nav 
+  class="navbar navbar-expand-lg navbar-dark" 
+  style="background-color: var(--background-color-negrito);">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html"><img src="./assets/imagenes/logo.png" alt="logo" class="img-logo" ></a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            
+<!--el link a la página registro es con Registrarse-->
+
+            <li id="btn-registro"class="nav-item">
+              <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+            </li>
+
+<!-- boton para cerrar sesion -->
+               <li class="nav-item">
+                  <a id="cerrarSesion" class="nav-link " href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a id="etiqueta" class="nav-link" href="#"></a>
+                </li>
+              </ul>
+          <div>
+<!--el link a la página login es con Ingresar-->
+          <a href="./pages/login.html">
+              <button id= "btn-ingresar" class="btn btn-outline-light">
+               Ingresar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+      <main>
+        <!--Destacados y categorias-->
+        <div class="destacado">
+          <img src="assets/imagenes/destacados y categorias/fifa.png" style="margin: 8vw; margin-right: 50px ; width: 50vw; height: 30vw;">
+          <section class="description1">
+            <h1 style="text-decoration: underline;">Destacado del mes:</h1>
+            <h2>FIFA 23</h2><br>
+            <p>FIFA 23 es un videojuego publicado por Electronic Arts.  Ofrece una experiencia de simulación de fútbol con equipos reales, jugadores, estadios y modos de juego tanto para un solo jugador como para multijugador en línea. </p><br>
+            <p>Categoria: Deportes</p><br>
+            <p>Precio: $4800</p>
+            <a type="button" class="btn btn-success" href="pages/categoria-juegos.html">Ver más</a>
+          </section>
+        </div>
+        <h2 class="categoriastitulo">Otras categorias :</h2>
+        <!--categorias-->
+      <div class="categorias1">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imagenes/destacados y categorias/accion.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aventura y accion</h5>
+                <p class="card-text">Prepárate para la máxima adrenalina y emoción con nuestra extensa colección de juegos de acción.</p>
+                <a type="button" class="btn btn-success" href="pages/categoria-juegos.html">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/imagenes/destacados y categorias/estrategia1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Estrategia</h5>
+                <p class="card-text">Descubre el apasionante mundo de la estrategia y pon a prueba tu ingenio con nuestra amplia selección de juegos de estrategia.</p>
+                <a type="button" class="btn btn-success" href="pages/categoria-juegos.html">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col2">
+            <div class="card h-100">
+              <img src="assets/imagenes/destacados y categorias/deportes.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Deportes</h5>
+                <p class="card-text">Nuestra colección de juegos de deportes te brinda la oportunidad de vivir la emoción de los deportes más populares.</p>
+                <a type="button" class="btn btn-success" href="pages/categoria-juegos.html">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+     <footer>
+      <div class="left">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  <a class="nav-link" href="/pages/acerca.html">Acerca de nosotros</a>
+                  <p>© Copyright 2023 RollingCode School <br>Todos los derechos reservados</p>
+      </div>
+      <div class="right">
+            <h4>Redes Sociales</h4>
+             <div class="redes">
+                  <a href="pages/error404.html"><img src="/assets/imagenes/logos redes sociales/instagram-1-svgrepo-com.svg" alt="instagram" class="img-logo-redes"></a>
+              <a href="pages/error404.html"><img src="/assets/imagenes/logos redes sociales/facebook-1-svgrepo-com.svg" alt="facebook" class="img-logo-redes"></a>
+              <a href="pages/error404.html"><img src="/assets/imagenes/logos redes sociales/youtube-svgrepo-com.svg" alt="youtube" class="img-logo-redes"></a>
+             </div>
+      </div>
+   </footer>
+    <!--script para el js de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--FIN LINK BOOSTRAP CSS-->
+<script src="app.js" type="text/javascript"></script>
+<script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>
