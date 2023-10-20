@@ -1,0 +1,39 @@
+#buttons{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-style{
+    background-color: #0189A3;
+    border-radius: 999px;
+}
+
+@media screen and (max-width:550px) {
+    #buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+    .contact-style{
+        background-color: #0189A3;
+        border-radius: 0px;
+        text-align: center;
+        width: 100%;
+    }
+}
